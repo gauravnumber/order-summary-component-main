@@ -1,5 +1,4 @@
-$primary-color: hsl(225, 100%, 94%); // pale blue
-$primary-bright-color: hsl(245, 75%, 52%); // bright blue
+@import "variables";
 
 * {
   box-sizing: border-box;
