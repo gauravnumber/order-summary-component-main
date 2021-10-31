@@ -89,7 +89,7 @@ body {
     // grid-template-areas:
     //   '';
 
-    padding: 0.3rem; // width: 80%;
+    padding: 0.7rem; // width: 80%;
     background-color: $neutral-desaturated-color;
     border-radius: 10px;
 
@@ -106,15 +106,22 @@ body {
     // .charge {
     //   float: right;
     // }
+    > .icon-music {
+      float: left;
+      margin-right: 0.6rem;
+    }
 
     .change-plan {
       // position: absolute;
       // top: 0;
-      display: block;
+      // display: block;
+      // display: flex;
+      // align-items: center;
       font-size: 18px;
       float: right;
       // text-align: center;
-      // vertical-align: middle  ;
+      // vertical-align: middle;
+      margin: 0;
     }
   }
 }

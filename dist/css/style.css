@@ -58,14 +58,18 @@ body {
   color: #7280a7;
 }
 .card .plan {
-  padding: 0.3rem;
+  padding: 0.7rem;
   background-color: #7280a7;
   border-radius: 10px;
 }
+.card .plan > .icon-music {
+  float: left;
+  margin-right: 0.6rem;
+}
 .card .plan .change-plan {
-  display: block;
   font-size: 18px;
   float: right;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
