@@ -1,5 +1,5 @@
 @import "variables";
-@import "mobile";
+// @import "mobile";
 
 @mixin maxWidth {
   max-width: 30rem;
@@ -33,12 +33,14 @@ body {
   background-image: url("../images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
   background-color: $primary-color;
-  // line-height: 1.5;
-  // overflow: hidden;
 }
 
 main {
   @include maxWidth;
+  // @include mobile {
+  //   width: 20rem;
+  // }
+
   height: 100%;
 }
 
@@ -55,41 +57,27 @@ button {
   }
 }
 
-// .bg-image {
-//   position: relative;
-//   // position: absolute;
-//   width: 100%;
-//   height: 50%;
-//   margin: 0;
-//   z-index: -1;
-// }
-
 .card {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  // position: relative;
+
   display: flex;
-  flex-flow: column nowrap;
-  // place-items: center center;
+  flex-direction: column;
+  // flex-flow: column nowrap;
 
   @include maxWidth;
 
-  @include mobile {
-    width: 20rem;
-  }
-  // width: 450px;
-  // height: 20rem;
-  // margin: auto;
-  // margin-top: 40px;
-  // margin: 0 auto;
-  // border-radius: 20px;
+  // @include mobile {
+  //   width: 20rem;
+
+  //   // left: 30%;
+  //   // left: 168px;
+  // }
 
   z-index: 2;
   img.illustration-hero {
-    // width: 450px;
-    // height: 220px;
     @include maxWidth;
     border-radius: 30px 30px 0 0;
   }
@@ -99,23 +87,16 @@ button {
     flex-direction: column;
     justify-content: space-between;
 
-    // width: 20rem;
     padding: 3rem;
 
-    @include mobile {
-      padding: 1rem;
-    }
-    // @media screen and (max-width: 400px) {
+    // @include mobile {
     //   padding: 1rem;
     // }
-    // padding: 30px;
-    // padding: 1.2rem;
+
     background-color: #fff;
-    // background-color: $neutral-color;
     border-radius: 0 0 30px 30px;
 
     &-title {
-      // margin-top: 0;
       text: {
         align: center;
       }
@@ -127,41 +108,13 @@ button {
       color: $neutral-desaturated-color;
       font-weight: 500;
     }
-    // overflow: hidden;
-    // width: 100%;
-
-    // h2 {
-    //   margin: 0;
-    // }
   }
 
   .plan {
-    // display: block;
-    // display: flex;
-    // display: grid;
-    // grid-template-areas:
-    //   '';
-
-    padding: 1rem; // width: 80%;
-    // padding: 0.7rem; // width: 80%;
-    // background-color: $neutral-desaturated-color;
+    padding: 1rem;
     background-color: $neutral-color;
     border-radius: 10px;
     line-height: 1.5;
-    // &-option {
-    //   padding: 0.1rem;
-    //   // display: flex;
-    // }
-
-    // &-heading,
-    // .charge {
-    //   display: inline-block;
-    //   // display: block;
-    // }
-
-    // .charge {
-    //   float: right;
-    // }
 
     &-heading {
       font-weight: 900;
@@ -177,8 +130,6 @@ button {
     }
 
     .change-plan {
-      // position: relative;
-      // top: 10;
       font-size: 18px;
       float: right;
       margin: 0;
@@ -203,5 +154,4 @@ button {
     margin-top: 1rem;
   }
 }
-
-// @import "mobile";
+@import "mobile";

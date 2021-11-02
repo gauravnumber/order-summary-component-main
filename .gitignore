@@ -15,4 +15,4 @@
 .DS_Store
 .prettierignore
 
-dist/css/style.css.map
+./dist/css/style.css.map
