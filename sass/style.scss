@@ -1,5 +1,4 @@
 @import "variables";
-// @import "mobile";
 
 @mixin maxWidth {
   max-width: 30rem;
@@ -37,10 +36,6 @@ body {
 
 main {
   @include maxWidth;
-  // @include mobile {
-  //   width: 20rem;
-  // }
-
   height: 100%;
 }
 
@@ -65,16 +60,8 @@ button {
 
   display: flex;
   flex-direction: column;
-  // flex-flow: column nowrap;
 
   @include maxWidth;
-
-  // @include mobile {
-  //   width: 20rem;
-
-  //   // left: 30%;
-  //   // left: 168px;
-  // }
 
   z-index: 2;
   img.illustration-hero {
@@ -88,10 +75,6 @@ button {
     justify-content: space-between;
 
     padding: 3rem;
-
-    // @include mobile {
-    //   padding: 1rem;
-    // }
 
     background-color: #fff;
     border-radius: 0 0 30px 30px;

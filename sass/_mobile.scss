@@ -1,25 +1,11 @@
-// @mixin mobile {
-//   @media screen and (max-width: 400px) {
-//     @content;
-//   }
-// }
 @media screen and (max-width: 400px) {
   body {
-    // width: 300px;
     height: 100%;
   }
 
-  // .bg-image {
-  //   margin-top: 20rem;
-  //   width: 300px;
-  //   height: 100%;
-  // }
-
   .card {
     width: 20rem;
-    // width: 300px;
     .order-summary {
-      // margin-top: 1rem;
       padding: 1rem;
 
       &-title {
@@ -27,8 +13,4 @@
       }
     }
   }
-
-  // .order-summary {
-  //   padding: 1rem;
-  // }
 }
